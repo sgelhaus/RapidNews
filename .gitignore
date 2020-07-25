@@ -1,2 +1,4 @@
-# API keys
+# API Key file to ignore
 .env
+
+.DS_Store

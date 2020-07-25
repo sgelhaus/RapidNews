@@ -25,8 +25,7 @@ func main() {
 
 	var f string
 
-	apiKey := "8b3fa2fc4fc74b5988eba4bf22f8c103"
-	//apiKey := os.Getenv("API_KEY")
+	apiKey := os.Getenv("API_KEY")
 
 	httpResponse, error := http.Get("https://newsapi.org/v2/top-headlines?country=us&pageSize=10&page=1" + "&apiKey=" + apiKey)
 	if error != nil {
